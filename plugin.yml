@@ -1,0 +1,29 @@
+name: Playerstats
+main: com.gmail.derpwave.Playerstats
+version: 0.4
+
+
+commands:
+   saverepmap:
+      description: save repmap to file  
+      usage: /saverepmap
+      permission: saverepmap.rn
+      permission-message: You don't have permission to use this command.
+      
+   getrep:
+      description: request player meta reputation  
+      usage: /getrep [player]
+      permission: getrep.rn
+      permission-message: You don't have permission to use this command.
+
+   setrep:
+      description: set player meta reputation
+      usage: /setrep [player] [value]
+      permission: setrep.rn
+      permission-message: You don't have permission to use this command.
+      
+   changerep:
+      description: alter player meta reputation
+      usage: /changerep [player] [value]
+      permission: changerep.rn
+      permission-message: You don't have permission to use this command.
