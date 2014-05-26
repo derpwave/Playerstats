@@ -217,8 +217,12 @@ public class Playerstats extends JavaPlugin implements Listener {
     	}
     }
     
-    public void logger(String text) {
-    	Bukkit.getServer().getLogger().log(Level.INFO, "[Reputation] "+text);
+    public void logger(String text) {  //write something into the server log
+    	Bukkit.getServer().getLogger().log(Level.INFO, "[Playerstats] "+text);
+    }
+    
+    public void broadcast(String text) {  //broadcast message to all players on the server
+    	Bukkit.getServer().broadcastMessage(text);
     }
     
     public Plugin getplugin(String name) {
